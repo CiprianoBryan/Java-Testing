@@ -19,4 +19,13 @@ public class PriceCalculatorTest {
         calculator.addPrice(5.3);
         assertThat(calculator.getTotal(), is(15.5));
     }
+
+    @Test
+    public void total_with_discount() {
+        PriceCalculator calculator = new PriceCalculator();
+        calculator.setDiscount(50);
+        calculator.addPrice(10.2);
+        calculator.addPrice(9.8);
+        assertThat(calculator.getTotal(), is(10.0));
+    }
 }
