@@ -1,4 +1,4 @@
-package com.tata.javatests;
+package com.tata.javatests.util;
 
 import org.junit.Test;
 

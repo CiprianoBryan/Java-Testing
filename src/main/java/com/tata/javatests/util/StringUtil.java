@@ -1,4 +1,4 @@
-package com.tata.javatests;
+package com.tata.javatests.util;
 
 public class StringUtil {
     public static String repeat(String text, int times) {
